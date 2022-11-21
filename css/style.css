@@ -11,20 +11,44 @@ body {
 
 /* Header */
 header {
-    height: 80vh;
+    min-height: 80vh;
+    position: relative;
 }
 
 .h-top {
     width: 100vw;
     position: fixed;
-    height: 10vh;
+    min-height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h-top ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: calc(100vw / 4);
+    list-style-type: none;
+}
+
+.h-top ul li:hover {
+    padding: 22px 0px;
+    border-bottom: 2px dashed black;
 }
 
 .h-bottom {
-    height: 75vh;
+    min-height: 75vh;
     padding-top: 10vh;
 }
 
+header img {
+    position: absolute;
+    width: 35%;
+    top: 75%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
 /* Main */
 
 /* Footer */
@@ -36,11 +60,6 @@ header {
 
 .debug .h-top {
     background-color: lightcoral;
-    border: 2px dashed black;
-}
-
-.debug .header-top {
-    background-color: lightcyan;
     border: 2px dashed black;
 }
 
