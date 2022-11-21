@@ -22,6 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .h-top ul {
@@ -56,6 +57,7 @@ header img {
 /* Debug */
 .debug header {
     background-color: lightblue;
+    border: 2px dashed black;
 }
 
 .debug .h-top {
@@ -65,5 +67,15 @@ header img {
 
 .debug .h-bottom {
     background-color: lightgoldenrodyellow;
+    border: 2px dashed black;
+}
+
+.debug .first-section {
+    background-color: lightgray;
+    border: 2px dashed black;
+}
+
+.debug .second-section {
+    background-color: lightgreen;
     border: 2px dashed black;
 }
