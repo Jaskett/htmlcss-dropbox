@@ -5,10 +5,46 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans' sans-serif;
+}
+
 /* Header */
+header {
+    height: 80vh;
+}
+
+.h-top {
+    width: 100vw;
+    position: fixed;
+    height: 10vh;
+}
+
+.h-bottom {
+    height: 75vh;
+    padding-top: 10vh;
+}
 
 /* Main */
 
 /* Footer */
 
 /* Debug */
+.debug header {
+    background-color: lightblue;
+}
+
+.debug .h-top {
+    background-color: lightcoral;
+    border: 2px dashed black;
+}
+
+.debug .header-top {
+    background-color: lightcyan;
+    border: 2px dashed black;
+}
+
+.debug .h-bottom {
+    background-color: lightgoldenrodyellow;
+    border: 2px dashed black;
+}
