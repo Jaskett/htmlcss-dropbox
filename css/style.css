@@ -14,6 +14,18 @@ body {
     display: none;
 }
 
+.t-ind-13 {
+    text-indent: -13px;
+}
+
+.t-ind-10 {
+    text-indent: -10px;
+}
+
+.t-ind-16 {
+    text-indent: -16px;
+}
+
 h1 {
     font-size: 40px;
 }
@@ -44,6 +56,10 @@ h3 {
 
 .just-center {
     justify-content: center;
+}
+
+.align-basel {
+    align-items: baseline;
 }
 
 .flex-wrap {
@@ -80,8 +96,28 @@ h3 {
     width: 60%;
 }
 
+.w-70 {
+    width: 70%;
+}
+
 .w-100 {
     width: 100%;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.m-top-30 {
+    margin-top: 30px;
+}
+
+.pad-top-bottom-15 {
+    padding: 15px 0;
+}
+
+.pad-left-20 {
+    padding-left: 20px;
 }
 
 /* Bottoni */
@@ -101,11 +137,6 @@ h3 {
 }
 
 /* Header */
-header {
-    height: 80vh;
-    position: relative;
-}
-
 .h-top {
     position: fixed;
     height: 65px;
@@ -119,37 +150,45 @@ header {
     list-style-type: none;
 }
 
+header nav ul li {
+    flex-shrink: 0;
+    border-bottom: 1px solid white;
+    line-height: 65px;
+}
+
+#logo {
+    line-height: 0;
+}
+
 .h-top ul li:hover {
-    padding: 22px 0px;
     border-bottom: 2px solid black;
 }
 
 .nav-anchor {
     text-decoration: none;
+    display: inline-block;
 }
 
 .h-bottom h1 {
-    padding: 50px 210px 50px 60px;
-    font-size: 60px;
+    padding: 49px 0;
+    font-size: 65px;
+    width: 90%;
 }
 
 .h-bottom {
-    height: 80vh;
+    height: 690px;
     padding-top: 65px;
-    margin: auto;
-    width: 70%;
-}
-
-.jumbo {
-    width: 100%;
 }
 
 #head-jumbo-btn {
-    margin: 40px 0;
+    margin: 30px 0;
 }
 .fa-arrow-down {
-    position: absolute;
-    bottom: 0%;
+    margin-top: 55px;
+}
+
+.fa-arrow-down:hover {
+    color: #be0000;
 }
 
 /* Main */
@@ -206,7 +245,7 @@ main section:not(#fourth-section) {
 .price-table-top > div {
     border: 1px solid black;
     width: calc(90% / 3);
-    height: 135vh;
+    height: 150vh;
     overflow-y: auto;
 }
 
@@ -217,13 +256,12 @@ main section:not(#fourth-section) {
 .price-table-top > div hr {
     border: 0.5px solid;
     width: 20%;
-    margin: 50px 30px 50px;
+    margin: 50px 35px 50px;
 }
 
 .user-price {
     text-align: center;
     border-bottom: 1px solid black;
-    padding: 10px 0px;
 }
 
 .user-price i {
@@ -231,46 +269,44 @@ main section:not(#fourth-section) {
 }
 
 .price {
-    padding: 15px 25px 10px;
     font-weight: bold;
 }
 
-.duration {
-    padding: 0px 25px 20px;
-}
-
-.info {
-    padding: 15px 25px 20px 15px;
-}
 .table-btn {
-    padding: 12px 49px;
-    margin: 45px 30px 25px;
-}
-.else {
-    margin-left: 30px;
+    padding: 12px 30px;
+    margin: 28px 0px;
 }
 
 .else a:hover {
     color: #6582ff;
 }
 
-.people::before, .folder::before, .nodes::before {
-    padding-left: 10px;
+.people::before, .people-2::before .folder::before, .nodes::before, .check::before {
     display: inline-block;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
 
-.people:before {
+.people::before {
     content: "\f007";
 }
 
-.folder:before {
+.people-2::before {
+    content: "\f0c0";
+}
+
+.folder::before {
     content: " \f07b";
 }
 
-.nodes:before {
+.nodes::before {
     content: "\f1e0";
+}
+
+.check::before {
+    content: "\f00c";
+    color: #0061ff;
+    padding-right: 5px;
 }
 
 .price-table-bottom {
@@ -281,15 +317,15 @@ main section:not(#fourth-section) {
     border: 1px solid black;
 }
 
-.price-table-bottom div{
+/*.price-table-bottom div{
     position: relative;
-}
+} */
 
-.price-table-bottom button {
+/*.price-table-bottom button {
     position: absolute;
     top: 25px;
     right: 19px;
-}
+} */
 
 .table-btn-bt {
     padding: 12px 25px;
@@ -312,6 +348,7 @@ main section:not(#fourth-section) {
 
 #second-section > div {
     height: 50vh;
+    width: calc(100vw / 2);
 }
 
 #second-section div .w-40 {
@@ -388,7 +425,7 @@ main section:not(#fourth-section) {
 
 #fifth-section i {
     position: relative;
-    left: 30%;
+    left: 33%;
 }
 
 #fifth-section {
@@ -486,7 +523,7 @@ footer h3 {
 }
 
 .btn.bl:hover {
-    background-color: #2222ff;
+    background-color: #9191ff;
 }
 
 .btn.wh, .btx2-wh2 {
