@@ -39,6 +39,8 @@ header {
 }
 
 .h-bottom {
+    margin: auto;
+    width: 80%;
     min-height: 75vh;
     padding-top: 10vh;
 }
@@ -50,7 +52,53 @@ header img {
     left: 65%;
     transform: translate(-50%, -50%);
 }
+
 /* Main */
+.first-section {
+    width: 70%;
+    margin: auto;
+    height: 150vh;
+    text-align: left;
+}
+
+.head-section > h2:first-child {
+    padding: 30px 0;
+    font-size: 30px;
+}
+
+.head-section p {
+    padding: 30px;
+}
+
+.head-section > div, span :not(p) {
+    display: inline-block;
+}
+
+.head-section > span, div {
+    vertical-align: middle;
+}
+
+#check-radio-button {
+    border: 5px solid blue;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+#uncheck-radio-button {
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+.fatturazione {
+    padding: 20px;
+}
+
+.second-section {
+    height: 50vh;
+}
 
 /* Footer */
 
