@@ -59,11 +59,6 @@ main section:not(.fourth-section) {
     margin: auto;
 }
 
-.first-section {
-    height: 150vh;
-    text-align: left;
-}
-
 .head-section > h2:first-child {
     padding: 30px 0;
     font-size: 30px;
@@ -121,9 +116,9 @@ main section:not(.fourth-section) {
 }
 
 .second-section {
-    height: 55vh;
     display: flex;
     align-items: center;
+    padding: 50px 0px;
 }
 
 .second-section > div {
@@ -136,8 +131,22 @@ main section:not(.fourth-section) {
     background-size: cover;
 }
 
-.third-section {
+#s3-container {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+#s3-container div {
+    width: calc(90% / 3);
     height: 50vh;
+}
+
+.third-section h2 {
+    text-align: center;
+    font-size: 30px;
 }
 
 .fourth-section {
@@ -212,6 +221,16 @@ footer {
 
 .debug .third-section {
     background-color: lightpink;
+    border: 2px dashed black;
+}
+
+.debug #s3-container {
+    background-color: lightblue;
+    border: 2px dashed black;
+}
+
+.debug #s3-container div {
+    background-color: lightcoral;
     border: 2px dashed black;
 }
 
