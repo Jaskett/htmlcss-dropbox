@@ -10,6 +10,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 h1 {
     font-size: 40px;
 }
@@ -80,6 +84,7 @@ h3 {
     width: 100%;
 }
 
+/* Bottoni */
 .btn, .btnx-wh2 {
     padding: 10px 20px;
     border: 0;
@@ -99,10 +104,6 @@ h3 {
 header {
     height: 80vh;
     position: relative;
-}
-
-.w-100 {
-    width: 100%;
 }
 
 .h-top {
@@ -153,7 +154,7 @@ header {
 
 /* Main */
 /* Corpo pagina */
-main section:not(.fourth-section) {
+main section:not(#fourth-section) {
     width: 60%;
     margin: auto;
 }
@@ -247,6 +248,10 @@ main section:not(.fourth-section) {
 }
 .else {
     margin-left: 30px;
+}
+
+.else a:hover {
+    color: #6582ff;
 }
 
 .people::before, .folder::before, .nodes::before {
@@ -390,6 +395,10 @@ main section:not(.fourth-section) {
     padding: 30px 0 100px;
 }
 
+#fifth-section:hover .hidden-p {
+    display: block;
+}
+
 /* Footer */
 footer h3 {
     padding: 20px 0;
@@ -417,6 +426,11 @@ footer h3 {
 
 .f-container-flex a {
     text-decoration: none;
+}
+
+.f-container-flex a:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 .f-container i {
@@ -470,12 +484,22 @@ footer h3 {
 .btn.bl {
     background-color: #0061ff;
 }
-.btn.wh, .btx2-wh2 {
-    background-color: #fff;
-    color: #000;
-    border-color: #000;
+
+.btn.bl:hover {
+    background-color: #2222ff;
 }
-/* Colori Header */
+
+.btn.wh, .btx2-wh2 {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.btn.wh:hover, .btnx-wh2:hover {
+    color: white;
+    background-color: black;
+}
+
 .h-top {
     background-color: #fff;
 }
@@ -519,24 +543,63 @@ footer {
 #b1 {
     background-color: #a2d39b;
 }
+
+#b1:hover, #b1:active {
+    border:20px solid #d1e9cd;
+}
+
 #b2 {
     background-color: #61082b;
 }
+
+#b2:hover, #b1:active {
+    border:20px solid #5d2c3f;
+}
+
 #b3 {
     background-color: #0093ce;
 }
+
+#b3:hover, #b1:active {
+    border:20px solid #619fb8;
+}
+
 #b4 {
     background-color: #ff1c1c;
 }
+
+#b4:hover, #b1:active {
+    border:20px solid #ff6363;
+}
+
 #b5 {
     background-color: #d5001f;
 }
+
+#b5:hover, #b1:active {
+    border:20px solid #d14d61;
+}
+
 #b6 {
     background-color: #b4d0e7;
 }
+
+#b6:hover, #b1:active {
+    border:20px solid #d8dde0;
+}
+
 #b7 {
     background-color: #0d2481;
 }
+
+#b7:hover, #b1:active {
+    border:20px solid #293a7d;
+}
+
 #b8 {
     background-color: #ffd830;
+}
+
+#b8:hover, #b8:active {
+    border:20px solid #f6de76;
 }
