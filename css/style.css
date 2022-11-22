@@ -198,18 +198,55 @@ main section:not(.fourth-section) {
 
 .price-table-top {
     padding-top: 10px;
-    display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
 .price-table-top > div {
-    height: 90vh;
+    border: 1px solid black;
     width: calc(90% / 3);
+    height: 135vh;
+    overflow-y: auto;
+}
+
+.type {
+    padding-left: 20px;
 }
 
 .price-table-top > div hr {
-    width: 30%;
+    border: 0.5px solid;
+    width: 20%;
+    margin: 50px 30px 50px;
+}
+
+.user-price {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+}
+
+.user-price i {
+    padding: 0px 6px;
+}
+
+.price {
+    padding: 15px 25px 10px;
+    font-weight: bold;
+}
+
+.duration {
+    padding: 0px 25px 20px;
+}
+
+.info {
+    padding: 15px 25px 20px 15px;
+}
+.table-btn {
+    padding: 12px 49px;
+    margin: 45px 30px 25px;
+}
+.else {
+    margin-left: 30px;
 }
 
 .price-table-bottom {
@@ -217,8 +254,26 @@ main section:not(.fourth-section) {
 }
 
 .price-table-bottom > div {
-    height: 35vh;
-    width: 100%;
+    border: 1px solid black;
+}
+
+.price-table-bottom div{
+    position: relative;
+}
+.price-table-bottom button {
+    position: absolute;
+    top: 25px;
+    right: 19px;
+}
+.table-btn-bt {
+    padding: 12px 25px;
+}
+#bt-info {
+    padding: 50px 20px 70px;
+}
+#price-bottom {
+    font-weight: bold;
+    padding: 5px 20px 10px;
 }
 
 .second-section {
