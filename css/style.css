@@ -303,16 +303,9 @@ main section:not(.fourth-section) {
     background-size: cover;
 }
 
+/* Terza Sezione */
 #s3-container {
-    display: flex;
     justify-content: space-between;
-    vertical-align: middle;
-    flex-wrap: wrap;
-    padding: 30px 0;
-}
-
-#s3-container img {
-    width: 100%;
 }
 
 #s3-container div {
@@ -320,19 +313,20 @@ main section:not(.fourth-section) {
     margin: 30px 0;
 }
 
-.third-section h2:first-child {
+#third-section h2:first-child {
     text-align: center;
 }
 
-.third-section h2 {
+#third-section h2 {
     padding: 80px 0;
 }
 
-.third-section a {
-    margin: 0 0px 100px;
+#third-section a {
+    margin: 0 0 100px;
     display: inline-block;
 }
 
+/* Quarta Sezione */
 .top-part {
     display: flex;
     width: 100%;
@@ -454,11 +448,11 @@ footer {
 .light-blue {
     background-color: #b4d0e7;
 }
-/* Colori hr */
+
 .price-table-top > div hr, #cont-sub-b hr {
     border-color: lightgrey;
 }
-/* Colori Bottoni */
+
 .btn.bl {
     background-color: #0061ff;
 }
@@ -531,99 +525,4 @@ footer {
 }
 #b8 {
     background-color: #ffd830;
-}
-
-/* Debug */
-.debug header {
-    background-color: lightblue;
-    border: 2px dashed black;
-}
-
-.debug .h-top {
-    background-color: lightcoral;
-    border: 2px dashed black;
-}
-
-.debug .h-bottom {
-    background-color: lightgoldenrodyellow;
-    border: 2px dashed black;
-}
-
-.debug .first-section {
-    background-color: lightgray;
-    border: 2px dashed black;
-}
-
-.debug .price-table-top > div, .debug .price-table-bottom > div {
-    background-color: lightgrey;
-    border: 2px dashed black;
-}
-
-.debug .second-section {
-    background-color: lightgreen;
-    border: 2px dashed black;
-}
-
-.debug .second-section > div {
-    background-color: lightskyblue;
-    border: 2px dashed black;
-}
-
-.debug .third-section {
-    background-color: lightpink;
-    border: 2px dashed black;
-}
-
-.debug #s3-container {
-    background-color: lightblue;
-    border: 2px dashed black;
-}
-
-.debug #s3-container div {
-    background-color: lightcoral;
-    border: 2px dashed black;
-}
-
-.debug .fourth-section {
-    background-color: lightsalmon;
-    border: 2px dashed black;
-}
-
-.debug .b-cont {
-    background-color: lightcyan;
-    border: 2px dashed black;
-}
-
-.debug .b-cont div {
-    background-color: lightgoldenrodyellow;
-    border: 2px dashed black;
-}
-
-.debug .bring-dpx {
-    background-color: lightgray;
-    border: 2px dashed black;
-}
-.debug .dpx-container {
-    background-color: lightpink;
-    border: 2px dashed black;
-}
-
-.debug .fifth-section {
-    background-color: lightseagreen;
-    border: 2px dashed black;
-}
-
-.debug .footer {
-    background-color: lightslategray;
-    border: 2px dashed black;
-}
-
-.debug .f-container-flex {
-    background-color: lightsteelblue;
-    border: 2px dashed black;
-}
-
-.debug .f-container-flex div {
-    background-color: lightyellow;
-    border: 2px dashed black;
 }
