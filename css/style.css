@@ -32,6 +32,69 @@ h3 {
     align-items: center;
 }
 
+.flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.just-center {
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.calc-2-w {
+    width: calc(100% / 2);
+}
+
+.calc-2 {
+    width: calc(100% / 2);
+    height: calc(100% / 2);
+}
+
+.calc-3 {
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.btn, .btnx-wh2 {
+    padding: 10px 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn.wh {
+    border: 1px solid black;
+}
+
+.btn-dpx {
+    flex-basis: 59%;
+    padding-left: 20%;
+}
+
 /* Header */
 header {
     height: 80vh;
@@ -64,8 +127,9 @@ header {
     text-decoration: none;
 }
 
-.w-30 {
-    height: 30%;
+.h-bottom h1 {
+    padding: 50px 210px 50px 60px;
+    font-size: 60px;
 }
 
 .h-bottom {
@@ -73,15 +137,6 @@ header {
     padding-top: 65px;
     margin: auto;
     width: 70%;
-}
-
-.h-bottom h1 {
-    padding: 50px 210px 50px 60px;
-    font-size: 60px;
-}
-
-.w-60 {
-    width: 60%;
 }
 
 .jumbo {
@@ -97,39 +152,40 @@ header {
 }
 
 /* Main */
+/* Corpo pagina */
 main section:not(.fourth-section) {
     width: 60%;
     margin: auto;
 }
 
-.head-section > h2:first-child {
-    padding: 30px 0;
+/* Radio button */
+#unchk-radio-btn, #chk-radio-btn {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+#chk-radio-btn {
+    border: 5px solid #0061ff;
+}
+#unchk-radio-btn {
+    border: 2px solid black;
+}
+
+/* Prima sezione */
+.head-section > h2 {
+    margin: 140px 0 30px;
 }
 
 .head-section > div, span :not(p) {
     display: inline-block;
 }
 
-.head-section > span, div {
+.head-section div, span {
     vertical-align: middle;
 }
 
-#check-radio-button {
-    border: 5px solid blue;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-}
-
-#uncheck-radio-button {
-    border: 2px solid black;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-}
-
 .fatturazione {
-    padding: 20px;
+    padding: 25px;
 }
 
 .fatturazione:hover {
