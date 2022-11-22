@@ -249,6 +249,25 @@ main section:not(.fourth-section) {
     margin-left: 30px;
 }
 
+.people::before, .folder::before, .nodes::before {
+    padding-left: 10px;
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.people:before {
+    content: "\f007";
+}
+
+.folder:before {
+    content: " \f07b";
+}
+
+.nodes:before {
+    content: "\f1e0";
+}
+
 .price-table-bottom {
     padding-top: 45px;
 }
