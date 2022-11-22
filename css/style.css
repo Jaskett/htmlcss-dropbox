@@ -290,6 +290,14 @@ main section:not(.fourth-section) {
     height: 50vh;
 }
 
+#second-section div .w-40 {
+    padding: 20px 60px 20px 40px;
+}
+
+#second-section button {
+    margin: 40px 0px;
+}
+
 #s2-img {
     background-image: url(../img/partner.png);
     background-size: cover;
