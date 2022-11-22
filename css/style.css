@@ -201,6 +201,15 @@ main section:not(.fourth-section) {
     height: 50vh;
 }
 
+.fifth-section > h2 {
+    padding: 30px 0;
+}
+
+.fifth-section > p {
+    padding: 30px 0;
+    text-align: center;
+}
+
 /* Footer */
 footer {
     height: 50vh;
@@ -284,17 +293,21 @@ footer {
 }
 
 .debug .b-cont {
+    background-color: lightcyan;
     border: 2px dashed black;
 }
 
 .debug .b-cont div {
+    background-color: lightgoldenrodyellow;
     border: 2px dashed black;
 }
 
 .debug .bring-dpx {
+    background-color: lightgray;
     border: 2px dashed black;
 }
 .debug .dpx-container {
+    background-color: lightpink;
     border: 2px dashed black;
 }
 
