@@ -260,30 +260,33 @@ main section:not(.fourth-section) {
 .price-table-bottom div{
     position: relative;
 }
+
 .price-table-bottom button {
     position: absolute;
     top: 25px;
     right: 19px;
 }
+
 .table-btn-bt {
     padding: 12px 25px;
 }
+
 #bt-info {
     padding: 50px 20px 70px;
 }
+
 #price-bottom {
     font-weight: bold;
     padding: 5px 20px 10px;
 }
 
-.second-section {
-    display: flex;
+/* Seconda Sezione */
+#second-section {
     align-items: center;
-    padding: 50px 0px;
+    padding: 100px 0px 80px;
 }
 
-.second-section > div {
-    width: calc(100% / 2);
+#second-section > div {
     height: 50vh;
 }
 
