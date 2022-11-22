@@ -6,11 +6,19 @@
 }
 
 body {
-    font-family: 'Open Sans' sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
 }
 
 h2 {
     font-size: 36px;
+}
+
+h3 {
+    padding: 20px 0;
 }
 
 /* Header */
@@ -33,7 +41,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-basis: calc(100vw / 4);
+    flex-basis: calc(100vw / 3.5);
     list-style-type: none;
 }
 
@@ -42,14 +50,16 @@ header {
     border-bottom: 2px dashed black;
 }
 
-.h-bottom {
-    margin: auto;
-    width: 70%;
-    min-height: 75vh;
-    padding-top: 10vh;
+.h-container-bottom {
+    width: 100%;
 }
 
-header img {
+.h-bottom {
+    height: 75vh;
+    padding-top: 65px;
+}
+
+.jumbo {
     position: absolute;
     width: 35%;
     top: 75%;
@@ -91,6 +101,14 @@ main section:not(.fourth-section) {
 
 .fatturazione {
     padding: 20px;
+}
+
+.fatturazione:hover {
+    text-decoration: underline;
+}
+
+#logo:hover, #nav-btn {
+    border:0;
 }
 
 .price-table-top {
@@ -136,15 +154,19 @@ main section:not(.fourth-section) {
 
 #s3-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     vertical-align: middle;
     flex-wrap: wrap;
     padding: 30px 0;
 }
 
+#s3-container img {
+    width: 100%;
+}
+
 #s3-container div {
     width: calc(90% / 3);
-    height: 50vh;
+    margin: 30px 0;
 }
 
 .third-section h2:first-child {
@@ -152,11 +174,12 @@ main section:not(.fourth-section) {
 }
 
 .third-section h2 {
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
-.third-section a, .third-section a:active {
-    color: blue;
+.third-section a {
+    margin: 0 0px 100px;
+    display: inline-block;
 }
 
 .top-part {
@@ -192,9 +215,10 @@ main section:not(.fourth-section) {
     align-items: center;
 }
 
-.btn {
-    flex-basis: 59%;
-    padding-left: 20%;
+.brand-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fifth-section {
@@ -234,6 +258,26 @@ footer {
 .f-container hr {
     width: 10%;
     margin: 30px 0;
+}
+
+#logo:hover {
+    border: 0;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: 0;
+}
+.btn.wh {
+    border: 1px solid black;
+}
+.btnx2-wh {
+    padding: 5px 20px;
+}
+
+.btn-dpx {
+    flex-basis: 59%;
+    padding-left: 20%;
 }
 
 /* Debug */
