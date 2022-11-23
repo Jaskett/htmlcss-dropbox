@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropbox</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -64,7 +66,7 @@
         <section id="first-section" class="m-auto w-60">
             <div class="head-section">
                 <h2>Trova il piano business che fa per te</h2>
-
+                <!-- Radio Button -->
                 <div>
                     <span>
                         <div id="chk-radio-btn"></div>
@@ -76,26 +78,27 @@
                     </span>
                 </div>
             </div>
-
+            <!-- Tabelle Prezzi -->
             <div class="price-table-top d-flex just-sp-between">
                 <div>
                     <div class="user-price pad-top-bottom-15">
                         <i class="fa-solid fa-user"></i>
                         Singolo
                     </div>
+
                     <div class="m-auto w-70">
                         <h3 class="t-ind-13 m-top-30">Professional</h3>
-                        <p class="price t-ind-13 pad-top-bottom-15">&#8364; 12.00</p>
+                        <p class="price t-ind-13 pad-top-bottom-15">&euro; 12.00</p>
                         <p class="duration t-ind-13">/mese</p>
                         <br>
-                        <p class="info t-ind-10 people pad-top-bottom-15">
-                            1 utente
+                        <p class="info t-ind-10 pad-top-bottom-15">
+                            <i class="fa-solid fa-user"></i> 1 utente
                         </p>
-                        <p class="info t-ind-10 folder pad-top-bottom-15">
-                            5 TB di spazio di archiviazione sicuro
+                        <p class="info t-ind-10 pad-top-bottom-15">
+                            <i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione sicuro
                         </p>
-                        <p class="info t-ind-10 nodes pad-top-bottom-15">
-                            Funzioni di produttività premium e condivisione file semplice e sicura
+                        <p class="info t-ind-10 pad-top-bottom-15">
+                            <i class="fa-solid fa-share-nodes"></i> Funzioni di produttività premium e condivisione file semplice e sicura
                         </p>
                         <a class=" pointer d-in-blk td-none btn bl col-w table-btn w-100">Prova Gratis per 30 giorni</a>
                         <p class="else">
@@ -105,8 +108,8 @@
                     <hr>
                     <div class="m-auto w-70">
                         <h4 class="t-ind-13">Punti Salienti del piano</h4>
-                        <p class="t-ind-10 pad-top-bottom-15 check">Invia file fino a 100 GB con Dropbox Transfert</p>
-                        <p class="t-ind-10 pad-top-bottom-15 check">Cartelle Offline su dispositivi mobili</p>
+                        <p class="t-ind-10 pad-top-bottom-15"><i id="check" class="fa-solid fa-check"></i> Invia file fino a 100 GB con Dropbox Transfert</p>
+                        <p class="t-ind-10 pad-top-bottom-15"><i id="check" class="fa-solid fa-check"></i> Cartelle Offline su dispositivi mobili</p>
                     </div>
                 </div>
 
@@ -117,17 +120,17 @@
                     </div>
                     <div class="m-auto w-70">
                         <h3 class="t-ind-13 m-top-30">Advanced</h3>
-                        <p class="price t-ind-13 pad-top-bottom-15">&#8364; 18.00</p>
+                        <p class="price t-ind-13 pad-top-bottom-15">&euro; 18.00</p>
                         <p class="duration t-ind-13">/utente/mese</p>
                         <br>
-                        <p class="info t-ind-10 people-2 pad-top-bottom-15">
-                            3 o più utenti utente
+                        <p class="info t-ind-10 pad-top-bottom-15">
+                            <i class="fa-solid fa-users"></i> 3 o più utenti
                         </p>
                         <p class="info t-ind-10 folder pad-top-bottom-15">
-                            Tutto lo spazio di cui ha bisogno il tuo team
+                            <i class="fa-solid fa-folder"></i> Tutto lo spazio di cui ha bisogno il tuo team
                         </p>
                         <p class="info t-ind-10 nodes pad-top-bottom-15">
-                            Sofisticate funzioni di contollo e per tenere al sicuro tutti i file del tuo team
+                            <i class="fa-solid fa-share-nodes"></i> Sofisticate funzioni di contollo e per tenere al sicuro tutti i file del tuo team
                         </p>
                         <a class="pointer d-in-blk td-none btn bl col-w table-btn w-100">Prova Gratis per 30 giorni</a>
                         <p class="else">
@@ -137,12 +140,12 @@
                     <hr>
                     <div class="m-auto w-70">
                         <h4 class="t-ind-13">Punti Salienti del piano</h4>
-                        <p class="pad-top-bottom-15 check t-ind-10">Invia file fino a 100 GB con Dropbox Transfert</p>
-                        <p class="pad-top-bottom-15 check t-ind-10">Cartelle Offline su dispositivi mobili</p>
-                        <p class="pad-top-bottom-15 check t-ind-10">Cartelle Offline su dispositivi mobili</p>
-                        <p class="pad-top-bottom-15 check t-ind-10">Invia file fino a 100 GB con Dropbox Transfert</p>
-                        <p class="pad-top-bottom-15 check t-ind-10">Cartelle Offline su dispositivi mobili</p>
-                        <p class="pad-top-bottom-15 check t-ind-10">Invia file fino a 100 GB con Dropbox Transfert</p>
+                        <p class="pad-top-bottom-15 check t-ind-10"><i id="check" class="fa-solid fa-check"></i> Invia file fino a 100 GB con Dropbox Transfert</p>
+                        <p class="pad-top-bottom-15 check t-ind-10"><i id="check" class="fa-solid fa-check"></i> Cartelle Offline su dispositivi mobili</p>
+                        <p class="pad-top-bottom-15 check t-ind-10"><i id="check" class="fa-solid fa-check"></i> Cartelle Offline su dispositivi mobili</p>
+                        <p class="pad-top-bottom-15 check t-ind-10"><i id="check" class="fa-solid fa-check"></i> Invia file fino a 100 GB con Dropbox Transfert</p>
+                        <p class="pad-top-bottom-15 check t-ind-10"><i id="check" class="fa-solid fa-check"></i> Cartelle Offline su dispositivi mobili</p>
+                        <p class="pad-top-bottom-15 check t-ind-10"><i id="check" class="fa-solid fa-check"></i> Invia file fino a 100 GB con Dropbox Transfert</p>
                     </div>
                 </div>
 
@@ -154,16 +157,16 @@
                     <div class="m-auto w-70">
                         <h3 class="t-ind-13 m-top-30">Enterprise</h3>
                         <p class="price t-ind-13 pad-top-bottom-15">Contattaci</p>
-                        <p class="duration t-ind-13">&#45;</p>
+                        <p class="duration t-ind-13">-</p>
                         <br>
                         <p class="info t-ind-10 people pad-top-bottom-15">
-                            10 o più utenti
+                            <i class="fa-solid fa-user"></i> 10 o più utenti
                         </p>
                         <p class="info t-ind-10 folder pad-top-bottom-15">
-                            5TB di spazio di archiviazione sicuro
+                            <i class="fa-solid fa-folder"></i> 5TB di spazio di archiviazione sicuro
                         </p>
                         <p class="info t-ind-10 nodes pad-top-bottom-15">
-                            Funzioni di produttività premium e condivisione file semplice e sicura
+                            <i class="fa-solid fa-share-nodes"></i> Funzioni di produttività premium e condivisione file semplice e sicura
                         </p>
                         <a class="pointer d-in-blk td-none btn bl col-w table-btn w-100">Prova Gratis per 30 giorni</a>
                         <p class="else">
@@ -173,9 +176,9 @@
                     <hr>
                     <div class="pad-top-bottom-15 m-auto w-70">
                         <h4 class="t-indent-13">Punti Salienti del piano</h4>
-                        <p class="pad-top-bottom-15 check t-ind-10">Invia file fino a 100 GB con Dropbox Transfert</p>
-                        <p class="pad-top-bottom-15 check t-ind-10">Cartelle Offline su dispositivi mobili</p>
-                        <p class="pad-top-bottom-15 check t-ind-10">Invia file fino a 100 GB con Dropbox Transfert</p>
+                        <p class="pad-top-bottom-15 check t-ind-10"><i id="check" class="fa-solid fa-check"></i> Invia file fino a 100 GB con Dropbox Transfert</p>
+                        <p class="pad-top-bottom-15 check t-ind-10"><i id="check" class="fa-solid fa-check"></i> Cartelle Offline su dispositivi mobili</p>
+                        <p class="pad-top-bottom-15 check t-ind-10"><i id="check" class="fa-solid fa-check"></i> Invia file fino a 100 GB con Dropbox Transfert</p>
                     </div>
                 </div>
             </div>
@@ -216,7 +219,7 @@
         <!-- Terza sezione -->
         <section id="third-section" class="m-auto w-60">
             <h2>Esegui più operazioni con Dropbox Business</h2>
-            <div id="s3-container" class="d-flex flex-wrap">
+            <div id="s3-container" class="d-flex flex-wrap just-sp-between">
                 <div>
                     <img class="w-100" src="img/business-feature-switching-tools.png" alt="">
                     <h3>Passa di meno da uno strumento all'altro</h3>
@@ -278,7 +281,7 @@
 
                 <!-- Container centrale -->
                 <div class="b-cont-c cc calc-3">
-                    <img  class="bl-img w-40  pointer" src="img/designit.svg" alt="Logo Designit 2">
+                    <img  class="bl-img w-40 pointer" src="img/designit.svg" alt="Logo Designit 2">
                     <div id="cont-sub-b">
                         <hr>
                         <p class="brand-presentation">
