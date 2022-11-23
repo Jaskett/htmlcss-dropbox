@@ -38,6 +38,10 @@ h3 {
     padding: 20px 0;
 }
 
+.d-in-blk {
+    display: inline-block;
+}
+
 .d-flex {
     display: flex;
 }
@@ -124,13 +128,17 @@ h3 {
     padding: 15px 0;
 }
 
+.pad-top-bottom-50 {
+    padding: 50px 0;
+}
+
 .pad-left-20 {
     padding-left: 20px;
 }
 
 /* Bottoni */
 .btn, .btnx-wh2 {
-    padding: 10px 20px;
+    padding: 10px 13px;
     border: 0;
     cursor: pointer;
 }
@@ -280,23 +288,23 @@ header nav ul li {
     font-weight: 900;
 }
 
-.people:before {
+.people::before {
     content: "\f007";
 }
 
-.people-2:before {
+.people-2::before {
     content: "\f0c0";
 }
 
-.folder:before {
+.folder::before {
     content: " \f07b";
 }
 
-.nodes:before {
+.nodes::before {
     content: "\f1e0";
 }
 
-.check:before {
+.check::before {
     content: "\f00c";
     color: #0061ff;
     padding-right: 5px;
@@ -321,8 +329,7 @@ header nav ul li {
 } */
 
 .table-btn {
-    padding: 12px 30px;
-    margin: 28px 0px;
+    margin: 30px 0px;
 }
 
 .table-btn-bt {
@@ -379,6 +386,11 @@ header nav ul li {
 #third-section a {
     margin: 0 0 100px;
     display: inline-block;
+}
+
+.main:hover .fa-angle-down {
+    transform: rotate(180deg);
+    transition: all 0s linear;
 }
 
 /* Quarta Sezione */
@@ -463,8 +475,8 @@ footer h3 {
     margin: 8% 7.5% 5%;
 }
 
-.pad-top-bottom-50 {
-    padding: 50px 0;
+#lang {
+    padding-left: 7%;
 }
 
 #logo:hover {
@@ -547,9 +559,11 @@ footer h3 {
 .cc {
     background-color: #f5f5f5;
 }
+
 .b-img {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(249deg) brightness(105%) contrast(103%);
 }
+
 .bring-dpx h2 {
     color: #61082b;
 }
@@ -557,9 +571,11 @@ footer h3 {
 footer {
     background-color: #000;
 }
+
 .f-container p {
     color: #8e8e8e;
 }
+
 .f-container hr {
     border-color: #fff;
 }
