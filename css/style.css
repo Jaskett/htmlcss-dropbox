@@ -216,7 +216,7 @@ header nav ul li {
     margin: 140px 0 30px;
 }
 
-.head-section > div, span :not(p) {
+.head-section > div, span:not(p) {
     display: inline-block;
 }
 
@@ -424,6 +424,14 @@ header nav ul li {
     padding: 30px 0;
 }
 
+.main, .hidden-p {
+    padding: 40px 0;
+}
+
+#par1:hover .hidden-p, #par2:hover .hidden-p, #par3:hover .hidden-p {
+    display: block;
+}
+
 .hidden-p {
     display: none;
 }
@@ -437,13 +445,8 @@ header nav ul li {
     padding: 30px 0 100px;
 }
 
-#fifth-section:hover .hidden-p {
-    display: block;
-}
-
 .main:hover .fa-angle-down {
     transform: rotate(180deg);
-    transition: all 0s linear;
 }
 
 /* Footer */
@@ -476,7 +479,7 @@ footer h3 {
 .f-container hr {
     border: 0.5px solid;
     width: 10%;
-    margin: 8% 7.5% 5%;
+    margin: 8% 0% 5%;
 }
 
 #lang {
