@@ -10,10 +10,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-body::-webkit-scrollbar, #first-section div::-webkit-scrollbar {
-    display: none;
-}
-
 .t-ind-13 {
     text-indent: -13px;
 }
